@@ -2,7 +2,6 @@ language: node.js
 node_js:
  - 'stable'
 services:
- - mongodb
 addons:
  apt:
    sources:
@@ -15,8 +14,6 @@ env:
 sudo: required
 before_script: npm i
 script:
- - npm run test
- - npm test
 
 notifications:
  email: false

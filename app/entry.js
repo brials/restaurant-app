@@ -1,4 +1,5 @@
 'use strict';
+require('./scss/main.scss');
 
 const angular = require('angular');
 const uiBootstrap = require('angular-ui-bootstrap');
@@ -10,7 +11,7 @@ const ngAnimate = require('angular-animate');
 const ngFileUpload = require('ng-file-upload');
 const path = require('path');
 
-const restaurantApp = angular.module('restaurantApp', [ngTouch, ngAnimate, uiRouter, ngFileUpload, uiBootstrap])
+const restaurantApp = angular.module('restaurantApp', [ngTouch, ngAnimate, uiRouter, ngFileUpload, uiBootstrap]);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(key => {

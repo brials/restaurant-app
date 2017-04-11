@@ -6,7 +6,7 @@ function routerConfig($stateProvider, $urlRouterProvider){
   $urlRouterProvider.when('', '/join#signup');
   $urlRouterProvider.when('/', '/joinn#signup');
   $urlRouterProvider.when('/signup', '/join#signup');
-  $urlRouterProvider.when('/login', '/join#signup');
+  $urlRouterProvider.when('/login', '/join#login');
 
   let states = [
     {
@@ -19,7 +19,7 @@ function routerConfig($stateProvider, $urlRouterProvider){
     {
       name: 'landing',
       url: '/join',
-      template: require('../view/landing/kanding.html'),
+      template: require('../view/landing/landing.html'),
       controller: 'LandingController',
       controllerAs: 'landingCtrl',
     }
